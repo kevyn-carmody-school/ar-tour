@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+		<!-- include ar.js for a-frame -->
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		 
+		<a-scene embedded arjs>
+			<a-assets>
+				<a-asset-item id="myModel" src="atom_shell.glb"></a-asset-item>
+			</a-assets>
+
+			 
+			
+			<a-marker type="pattern" url="https://raw.githubusercontent.com/kevyn-carmody-school/ar/refs/heads/main/pattern-L_marker.patt?scrlybrkr=92351473">
+
+			
+				
+				
+			
+			
+			</a-marker>
+
+			<!-- define a camera which will move according to the marker position -->
+			<a-entity camera></a-entity>
+		</a-scene>
+	</body>
+</html>
