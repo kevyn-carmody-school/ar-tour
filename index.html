@@ -9,6 +9,8 @@
 		<a-scene embedded renderer="logarithmicDepthBuffer: true;" arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: false;" vr-mode-ui="enabled: false">
 			<a-assets>
 				<a-asset-item id="Tiger" src="tiger.glb"></a-asset-item>
+				<a-asset-item id="Bunny" src="bunny.glb"></a-asset-item>
+				<a-asset-item id="Burger" src="burger.glb"></a-asset-item>
 			</a-assets>
 	      <a-camera gps-camera rotation-reader></a-camera>
 	
@@ -17,19 +19,49 @@
 	        value="Welcome to LHS!"
 	        scale="12 12 12"
 	        color="yellow"
-	        gps-entity-place="latitude:00.00000; longitude: 00.00000;"
+	        gps-entity-place="latitude:39.27958663079953; longitude: -84.27570435622421;"
 	      ></a-text>
 			<a-entity gltf-model="#Tiger"
 				property: rotation;
-	                from: -90 -5 0;
-	                to: -90 5 0;
+	                from: -85 0 -85;
+					to: -95 0 -95;
 	                dur: 2000;
 	                dur: 1000;
                 	easing: linear;
 	                loop: true;
 				"
-				gps-entity-place="latitude:00.00000; longitude: 00.00000;"
+				gps-entity-place="latitude:39.27958663079953; longitude: -84.27570435622421;"
 			></a-entity>
+			<!-- stop 2 -->
+				<a-text
+					value="Please refrain from bullying other students. if you see bullying, report it or whatever."
+					scale="12 12 12"
+					color="yellow"
+					gps-entity-place="latitude:39.27961281891097; longitude: -84.27573593265998;"
+			  ></a-text>
+				<a-entity gltf-model="#Tiger"
+					property: rotation;
+						from: -35 0 -35;
+						to: -45 0 -45;
+						dur: 2000;
+						dur: 1000;
+						easing: linear;
+						loop: true;
+					"
+				gps-entity-place="latitude:39.27961281891097; longitude: -84.27573593265998;"
+				></a-entity>
+				<a-entity gltf-model="#Bunny"
+					property: rotation;
+		                from: -90 -5 0;
+		                to: 90 5 0;
+		                dur: 2000;
+		                dur: 1000;
+	                	easing: linear;
+		                loop: true;
+					"
+					gps-entity-place="latitude:39.27961281891097; longitude: -84.27573593265998;"
+				></a-entity>
+
 	    </a-scene>
 	</body>
 </html>
