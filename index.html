@@ -40,6 +40,7 @@
 					gps-entity-place="latitude:39.27961281891097; longitude: -84.27573593265998;"
 			  ></a-text>
 				<a-entity gltf-model="#Tiger"
+					animation="
 					property: rotation;
 						from: -35 0 -35;
 						to: -45 0 -45;
@@ -51,6 +52,7 @@
 				gps-entity-place="latitude:39.27961281891097; longitude: -84.27573593265998;"
 				></a-entity>
 				<a-entity gltf-model="#Bunny"
+					animation="
 					property: rotation;
 		                from: -90 -5 0;
 		                to: 90 5 0;
@@ -61,7 +63,26 @@
 					"
 					gps-entity-place="latitude:39.27961281891097; longitude: -84.27573593265998;"
 				></a-entity>
-
+			<!-- stop 3 -->
+				<a-entity gltf-model="#Burger"
+					animation="
+					property: rotation;
+		                from: -90 -5 0;
+		                to: 90 5 360;
+		                dur: 2000;
+		                dur: 1000;
+	                	easing: linear;
+		                loop: true;
+					"
+					gps-entity-place="latitude:39.2795848849251; longitude: -84.27554872950508;"
+					></a-entity>
+				<a-text
+					value="enjoy our delicious lunch and breakfast options!"
+					scale="12 12 12"
+					color="yellow"
+					gps-entity-place="latitude:39.2795848849251; longitude: -84.27554872950508;"
+			  	></a-text>
+			
 	    </a-scene>
 	</body>
 </html>
